@@ -63,7 +63,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]([https://github.com/YoutLone/Capstone-Project/edit/main/README.md](https://raw.githack.com/YoutLone/Capstone-Project/capstone-branch/index.html))
+- [Live Demo Link](https://raw.githack.com/YoutLone/Capstone-Project/capstone-branch/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
