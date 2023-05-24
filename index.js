@@ -164,10 +164,10 @@ function renderchefs() {
   for (let i = 0; i < 6; i += 1) {
     if (shuffledChefs[i]) {
       ourChefs.innerHTML += `
-          <div class="our-chefs_card">
+          <article class="our-chefs_card">
             <div class="container">
               <div class="img-holder">
-                <img class='square' src="./images/black-white.jpg" alt='checkbox'/>
+                <img class='square' src="./images/black-white.png" alt='checkbox'/>
                 <img src=${shuffledChefs[i].image} alt=${shuffledChefs[i].name} class="chef-img">
               </div>
               <div class="our-chefs_card-details">
@@ -176,7 +176,7 @@ function renderchefs() {
                 <p class="our-chefs_card-details-about">${shuffledChefs[i].about}</p>
               </div>
             </div>
-          </div>
+          </article>
         `;
     }
   }

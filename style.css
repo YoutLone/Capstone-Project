@@ -87,14 +87,14 @@ html {
 .logo {
   visibility: hidden;
   width: 150px;
-  color: var(--orange-color);
+  color: var(--gray-color);
 }
 
 .ggp-restaurant {
   visibility: hidden;
 }
 
-header {
+.hero-section {
   background: url("./images/restaurant.png");
   background-position: center;
   background-size: cover;
@@ -191,7 +191,8 @@ header {
 .menu_title {
   text-align: center;
   color: var(--gray-color);
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+  margin-top: 10px;
   font-size: 1.5rem;
   position: relative;
 }
@@ -199,8 +200,8 @@ header {
 .menu_title::after {
   position: absolute;
   content: "";
-  width: 100px;
-  height: 3px;
+  width: 40px;
+  height: 1px;
   background-color: var(--orange-color);
   top: 150%;
   left: 50%;
@@ -238,14 +239,56 @@ header {
 
 .describe_container-body {
   line-height: 1.4;
+  margin-bottom: 50px;
 }
 
 .describe_container-title {
   margin-bottom: 15px;
 }
 
+/* .describe_container-title::after {
+  position: relative;
+  content: " ";
+  width: 40px;
+  height: 1px;
+  background-color: var(--orange-color);
+  top: 150%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+} */
+
+.line {
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: var(--orange-color);
+  margin-left: 142px;
+  margin-bottom: 20px;
+}
+
+.previous-line {
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: var(--orange-color);
+  margin-left: 135px;
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
 .about-logo {
   color: #ec5242;
+  font-size: 1.5rem;
+}
+
+.footer-logo {
+  color: var(--gray-color);
+  font-size: 1.5rem;
+}
+
+.about_footer-logo {
+  color: var(--gray-color);
   font-size: 1.5rem;
 }
 
@@ -287,6 +330,16 @@ header {
 
 .our-chefs_container-title {
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.chefs-line {
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: var(--orange-color);
+  margin-left: 135px;
+  margin-top: -35px;
   margin-bottom: 20px;
 }
 
@@ -303,7 +356,8 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  padding: 10px;
+  gap: 20px;
 }
 
 .img-holder {
@@ -335,7 +389,8 @@ header {
 }
 
 .our-chefs_card-details-name {
-  margin-block: 5px;
+  margin-block: 10px;
+  margin-top: -5px;
 }
 
 .our-chefs_card-details-info {
@@ -349,6 +404,7 @@ header {
 .our-chefs_card-details-about {
   font-size: 0.8rem;
   line-height: 1.5;
+  margin-top: 10px;
 }
 
 .our-chefs_see-more {
@@ -373,7 +429,7 @@ header {
 
 footer {
   background-color: var(--light-gray-color);
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: space-between;
   gap: 15px;
@@ -461,15 +517,36 @@ button:hover {
   background-color: var(--white-color);
 }
 
+.previous_container {
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  border-top: 2px solid var(--gray-color);
+}
+
 .previous_container-header {
   font-weight: 900;
   font-size: 1rem;
   text-align: center;
+  margin-top: 30px;
 }
 
+/* .previous_container-header::after {
+  position: relative;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: var(--orange-color);
+  top: 150%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+} */
+
 .previous_container-body {
-  text-align: center;
   margin-block: 10px;
+  padding: 35px;
+  text-align: center;
 }
 
 .previous_container-images {
@@ -514,16 +591,17 @@ button:hover {
 }
 
 .about-reserve {
-  color: var(--white-color);
+  color: var(--gray-color);
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .bottom-nav_hamburger {
     display: none;
   }
 
   .logo {
     visibility: visible;
+    margin-left: 60px;
   }
 
   .ggp-restaurant {
@@ -532,7 +610,7 @@ button:hover {
     border: 2px solid var(--orange-color);
   }
 
-  header {
+  .hero-section {
     width: 100vw;
     padding: 0;
   }
@@ -577,7 +655,7 @@ button:hover {
     padding: 5px 30px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 0 13px;
   }
 
   .nav_menu {
@@ -606,16 +684,27 @@ button:hover {
     padding-block: 70px;
   }
 
+  .restaurant-title {
+    width: 100%;
+  }
+
+  .restaurant_title {
+    margin-left: 62px;
+  }
+
   .restaurant_heading {
     font-size: 3rem;
+    margin-left: 60px;
   }
 
   .restaurant_body {
     font-size: 1.2rem;
+    margin-left: 60px;
   }
 
   .restaurant_date {
     font-size: 2.5rem;
+    margin-left: 60px;
   }
 
   .restaurant_email {
@@ -649,17 +738,50 @@ button:hover {
     cursor: pointer;
   }
 
+  .line {
+    max-width: 30px;
+    height: 2px;
+    margin-left: 350px;
+  }
+
+  .previous-line {
+    max-width: 30px;
+    height: 2px;
+    margin-left: 630px;
+    margin-bottom: 35px;
+  }
+
+  .describe_container-container {
+    margin-top: 40px;
+    margin-left: 170px;
+  }
+
+  .previous_container-body {
+    margin-top: -24px;
+    margin-bottom: 45px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .our-chefs {
+    margin-left: 30px;
+  }
+
+  .our-chefs_card-details-name {
+    margin-top: -65px;
+  }
+
   .our-chefs_container {
-    max-width: 900px;
-    margin: 30px auto;
+    max-width: 970px;
+    margin: 60px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 45px;
   }
 
   .about_restaurant-body {
     margin-top: 20px;
-    background-color: var(--gray-color);
+    background-color: whitesmoke;
     padding: 30px;
     line-height: 2;
   }
@@ -671,14 +793,38 @@ button:hover {
 
   .describe_container > * {
     margin-bottom: 20px;
+    width: 70%;
   }
 
-  .previous_container {
-    padding: 10px;
-    max-width: 1200px;
-    margin: auto;
-    border-top: 2px solid var(--light-gray-color);
+  .describe_container {
+    margin-top: 22px;
+    margin-left: 255px;
   }
+
+  /* .previous_container {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    border-top: 2px solid var(--gray-color);
+  } */
+
+  .previous_container-header {
+    margin-bottom: 15px;
+    margin-top: 50px;
+    position: relative;
+  }
+
+  /* .previous_container-header::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: var(--orange-color);
+    top: 150%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+  } */
 
   .previous_container-images-card-details-body {
     font-size: 1rem;
@@ -692,8 +838,8 @@ button:hover {
   .our-chefs_container-title::after {
     position: absolute;
     content: "";
-    width: 100px;
-    height: 3px;
+    width: 40px;
+    height: 1px;
     background-color: var(--orange-color);
     top: 150%;
     left: 50%;
@@ -718,6 +864,7 @@ button:hover {
   }
 
   .partners_container-heading {
+    margin-top: 15px;
     position: relative;
     text-align: center;
     color: var(--white-color);
@@ -726,8 +873,8 @@ button:hover {
   .partners_container-heading::after {
     position: absolute;
     content: "";
-    width: 100px;
-    height: 3px;
+    width: 40px;
+    height: 1px;
     background-color: var(--orange-color);
     top: 150%;
     left: 50%;
@@ -745,14 +892,18 @@ button:hover {
     align-items: center;
   }
 
+  .chefs-line {
+    display: none;
+  }
+
   .partners_container-logo_item {
     font-size: 1.2rem;
     color: var(--gray-color);
   }
 
   footer {
-    background-color: var(--white-color);
-    padding: 20px;
+    background-color: var(--gray-color);
+    padding: 70px;
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -771,12 +922,14 @@ button:hover {
 
   .footer-logo {
     width: 200px;
+    color: var(--black-color);
     cursor: pointer;
   }
 
   .reserve {
     font-size: 1rem;
-    color: var(--gray-color);
+    margin-top: 7px;
+    color: var(--black-color);
   }
 
   .bottom-nav_center {
@@ -797,6 +950,7 @@ button:hover {
 
   .nav-list {
     margin-top: 0;
+    margin-right: 70px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -828,8 +982,20 @@ button:hover {
   }
 
   .about_restaurant-heading {
-    font-size: 2rem;
-    text-align: start;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .about_restaurant-heading::after {
+    position: relative;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: var(--orange-color);
+    top: 150%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
   }
 
   .menu_link {
@@ -838,6 +1004,13 @@ button:hover {
     text-align: center;
     text-decoration: underline;
     font-size: 1.5rem;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .restaurant > * {
+    margin-left: 60px;
+    width: 100%;
   }
 
   .about_restaurant {
@@ -855,6 +1028,6 @@ button:hover {
   }
 
   .about-reserve {
-    color: var(--white-color);
+    color: var(--gray-color);
   }
 }

@@ -21,7 +21,6 @@
     <title>GGP Restaurant Food and Drink</title>
   </head>
   <body>
-    <header>
       <nav>
         <div class="nav">
           <div class="nav_container">
@@ -53,11 +52,14 @@
             </ul>
           </div>
         </div>
+        <section class="hero-section">
         <div class="bottom-nav_hamburger" id="hambuger">
           <img src="./images/hamburger.svg" alt="hamburger" class="ham-icon" id="openHamburger"/>
           <img src="./images/closeicon.svg" alt="hamburger" class="hidden ham-icon" id="closeHamburger"/>
         </div>
       </nav>
+  <main>
+    <section class="hero-section">
       <div class="restaurant" id="about">
         <h3 class="restaurant_title">"A haven for food lovers, where every dish tells a unique story."</h3>
         <h1 class="restaurant_heading">
@@ -72,63 +74,66 @@
         <p class="restaurant_date">Daily Open(9:00AM ~ 1:00PM)</p>
         <p class="restaurant-email">gyigyipaw@gmail.com</p>
       </div>
-    </header>
-    <main>
+    </section>
+
+      <section class="main-menus">
         <div class="menu" id="menus">
           <h3 class="menu_title">Famous Food & Drink</h3>
           <div class="menu_cards">
-            <div class="menu_card">
+            <article class="menu_card">
               <img src="./images/italian.png" alt="italian" class="menu_card-image"/>
               <h2 class="menu_card-title">Italian Spaghetti</h2>
               <p class="menu_card-body">
                 Serve the Italian spaghetti immediately while it's still hot. You can accompany it with 
                 a side of garlic bread or a fresh salad.
               </p>
-            </div>
+            </article>
   
-            <div class="menu_card">
+            <article class="menu_card">
               <img src="./images/steak.png" alt="steak" class="menu_card-image"/>
               <h2 class="menu_card-title">Steak</h2>
               <p class="menu_card-body">
                 Carefully place the steak onto the hot surface. Let it sear without moving for about 
                 3-4 minutes, or until a nice crust forms on the bottom.
               </p>
-            </div>
+            </article>
   
-            <div class="menu_card">
+            <article class="menu_card">
               <img src="./images/pizza.png" alt="pizza" class="menu_card-image"/>
               <h2 class="menu_card-title">Pizza</h2>
               <p class="menu_card-body">
                 Spread a thin layer of pizza sauce or marinara sauce evenly over the dough, leaving 
                 a small border around the edges.
               </p>
-            </div>
+            </article>
   
-            <div class="menu_card">
+            <article class="menu_card">
               <img src="/images/cocktail.png" alt="cocktail" class="menu_card-image"/>
               <h2 class="menu_card-title">Cocktail</h2>
               <p class="menu_card-body">
                 Add the mixer or juice component. The amount will depend on the recipe and your taste 
                 preferences. Pour it into the mixing glass or shaker.
               </p>
-            </div>
+            </article>
   
-            <div class="menu_card">
+            <article class="menu_card">
               <img src="./images/wine.png" alt="wine" class="menu_card-image"/>
               <h2 class="menu_card-title">Wine</h2>
               <p class="menu_card-body">
                 Bordeaux: Bordeaux wines come from the Bordeaux region in France. They are typically made 
                 from a blend of grape .
               </p>
-            </div>
+            </article>
           </div>
   
           <button class="menu_btn" id="join">Order Now</button>
           <a href="#" class="menu_link">See The All Menus</a>
         </div>
+      </section>
   
         <section class="our-chefs" id="chefs">
           <h2 class="our-chefs_container-title">Our Special Chef</h2>
+          <div class="chefs-line"></div>
           <div class="our-chefs_container" id="all-chefs"></div>
           <button class="our-chefs_see-more">See More</button>
           <button class="our-chefs_see-less hidden">See Less</button>
@@ -150,7 +155,7 @@
   
       <footer>
         <div class="footer_container">
-          <h3 class="logo">GGP Food&Drink</h3>
+          <h3 class="footer-logo">GGP Food&Drink</h3>
           <p class="reserve">2023 GGP Restaurant. All rights reserved.</p>
         </div>
       </footer>
