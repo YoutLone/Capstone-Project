@@ -130,7 +130,7 @@ npx eslint .
 
 ## Author
 
-👤 **Is-Musangamfura Emmanuel**
+👤 **Than Myo Htet**
 
 - GitHub: [@githubhandle](https://github.com/YoutLone)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/than-myo-htet-618b2524b)
